@@ -182,3 +182,36 @@ ul[class=yellow] > li > a:hover {
   color: #edd934;
   transition: all 0.5s;
 }
+
+form {
+	position: relative;
+	width: auto;
+    left: auto;
+    right: auto;
+    margin: auto;
+    padding-left:175px;
+	padding-right:160px;
+	top: 15px;
+}
+
+form input[type="search"] {
+	background-color: var(--search-bg);
+	border: none;
+	box-sizing: border-box;
+	font: inherit;
+	font-size: 13px;
+	margin-left: 12px;
+	width: 85%;
+	color: #FEFFFA;
+	transition: all 0.2s;
+}	
+
+form label {
+	color: #0972D6;
+	position: absolute;
+	transition: all 0.4s;
+}
+
+form:focus-within input::placeholder {
+	opacity: 0;
+}
